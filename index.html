@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanush | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portfolio of Dhanush - AI & Data Science Engineer">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="gemini-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in-up">DHANUSH</h1>
+            <p class="fade-in-up delay-100">AI & Data Science Engineer<br>Creating intelligent solutions with precision.
+            </p>
+        </div>
+        <div class="scroll-prompt fade-in-up delay-300">
+            <span>↓ Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container" style="padding: var(--section-padding);">
+        <h2 class="section-title fade-in-up">Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card fade-in-up delay-100">
+                <div class="skill-name">Python</div>
+            </div>
+            <div class="skill-card fade-in-up delay-200">
+                <div class="skill-name">Java</div>
+            </div>
+            <div class="skill-card fade-in-up delay-300">
+                <div class="skill-name">C Programming</div>
+            </div>
+            <!-- Add more generic skills for balance if desired, kept to resume for now -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container" style="padding-bottom: var(--section-padding);">
+        <h2 class="section-title fade-in-up">Selected Works</h2>
+        <div class="projects-grid">
+
+            <!-- Asteroidanology -->
+            <article class="project-card fade-in-up">
+                <div class="project-content">
+                    <div>
+                        <h3 class="project-title">Asteroidanology</h3>
+                        <p class="project-desc">
+                            A software system predicting asteroid impact probability on Earth.
+                            Designed with a user-friendly interface accessible to non-technical users.
+                            Achieved 85% predictive accuracy.
+                        </p>
+                    </div>
+                    <div class="project-meta">
+                        Python • HTML • CSS • Impact Analysis
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tracademy -->
+            <article class="project-card fade-in-up delay-100">
+                <div class="project-content">
+                    <div>
+                        <h3 class="project-title">Tracademy</h3>
+                        <p class="project-desc">
+                            An AI-driven platform for automating the evaluation of descriptive answers from .jpeg
+                            inputs.
+                            Streamlines grading for educational institutions with 90% accuracy.
+                            (Currently under development)
+                        </p>
+                    </div>
+                    <div class="project-meta">
+                        Python • OpenCV • Word2Vec • EdTech AI
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="container" style="padding-bottom: var(--section-padding);">
+        <h2 class="section-title fade-in-up">Education</h2>
+        <div class="education-item fade-in-up">
+            <div class="edu-school">Dr. N.G.P Institute of Technology</div>
+            <div class="edu-degree">B.Tech Artificial Intelligence and Data Science (2nd Year)</div>
+            <div class="edu-stats">CGPA: 8.15 (First 3 Semesters)</div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer>
+        <div class="container fade-in-up">
+            <div class="contact-links">
+                <a href="mailto:dhanushworkspace160@gmail.com" class="contact-link">dhanushworkspace160@gmail.com</a>
+                <a href="tel:+916379620049" class="contact-link">+91 6379620049</a>
+            </div>
+            <p>Tamil Nadu, India</p>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">×</button>
+            <div class="modal-body">
+                <h2 id="modal-title" class="modal-title">Project Name</h2>
+
+                <div class="modal-section">
+                    <h3>About</h3>
+                    <p id="modal-desc">Project description goes here.</p>
+                </div>
+
+                <div class="modal-grid">
+                    <div class="modal-section">
+                        <h3>Impact</h3>
+                        <p id="modal-impact">Impact details.</p>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Accuracy</h3>
+                        <div class="accuracy-container">
+                            <span id="modal-accuracy" class="accuracy-value">85%</span>
+                            <div class="accuracy-bar-bg">
+                                <div id="modal-accuracy-bar" class="accuracy-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Technologies</h3>
+                    <div id="modal-tech" class="tech-tags">
+                        <!-- Tags injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
